@@ -1,1 +1,20 @@
-<lib-ngx-formly-designer></lib-ngx-formly-designer>
+<div class="row" style="margin:2em">
+  <div class="col-sm-12 col-md-2">
+    <formly-designer-types></formly-designer-types>
+  </div>
+  <div class="col-sm-12 col-md-5">
+    <formly-designer class="mt-4 mt-md-0 d-block" [model]="model" [fields]="fields" (modelChange)="onModelChange($event)"
+      (fieldsChange)="onFieldsChange($event)">
+    </formly-designer>
+    <div class="mt-4">
+      Fields:
+      <pre>{{ fieldsResult | json }}</pre>
+
+      Model:
+      <pre>{{ modelResult | json }}</pre>
+    </div>
+  </div>
+  <div class="col-sm-12 col-md-5 mt-sm-4 mt-md-0">
+    <formly-designer-properties></formly-designer-properties>
+  </div>
+</div>

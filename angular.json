@@ -16,6 +16,7 @@
           },
           "configurations": {
             "production": {
+              "project": "projects/ngx-formly-designer/ng-package.prod.json",
               "tsConfig": "projects/ngx-formly-designer/tsconfig.lib.prod.json"
             },
             "development": {
@@ -62,9 +63,14 @@
               "projects/ngx-formly-designer-test/src/assets"
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "node_modules/font-awesome/css/font-awesome.min.css",
               "projects/ngx-formly-designer-test/src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/jquery/dist/jquery.slim.min.js",
+              "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+            ]
           },
           "configurations": {
             "production": {

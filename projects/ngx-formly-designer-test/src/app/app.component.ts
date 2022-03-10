@@ -1,10 +1,34 @@
 import { Component } from '@angular/core';
+import { FormlyFieldConfig } from '@ngx-formly/core';
+
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'ngx-formly-designer-test';
+  fields: FormlyFieldConfig[] = [
+    { type: 'input', key: 'test1', templateOptions: { label: 'Test 1' } },
+    { type: 'input', key: 'test2', templateOptions: { label: 'Test 2' } },
+    {
+      key: 'test3',
+      fieldGroup: [
+        { key: 'test31', fieldGroup: [] },
+        { key: 'test32', fieldGroup: [] },
+      ]
+    },
+    { key: 'test4', fieldGroup: [] },
+  ];
+  model: any = {};
+  fieldsResult: FormlyFieldConfig[] = [];
+  modelResult: any;
+
+  onFieldsChange(fields: FormlyFieldConfig[]): void {
+    this.fieldsResult = fields;
+  }
+
+  onModelChange(model: any): void {
+    this.modelResult = model;
+  }
 }
