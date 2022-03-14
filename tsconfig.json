@@ -12,9 +12,9 @@
     "noFallthroughCasesInSwitch": true,
     "sourceMap": true,
     "paths": {
-      "ngx-formly-designer": [
-        "dist/ngx-formly-designer/ngx-formly-designer",
-        "dist/ngx-formly-designer"
+      "lib-formly-designer": [
+        "dist/lib-formly-designer/lib-formly-designer",
+        "dist/lib-formly-designer"
       ]
     },
     "declaration": false,

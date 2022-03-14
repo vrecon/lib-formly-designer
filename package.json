@@ -7,9 +7,9 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "copy": "node tools/copy.js README.md dist/ngx-formly-designer/README.md && node tools/copy.js LICENSE dist/ngx-formly-designer/LICENSE",
-    "build_lib": "ng build ngx-formly-designer --configuration production",
-    "npm_pack": "npm run copy && cd dist/ngx-formly-designer && npm pack",
+    "copy": "node tools/copy.js README.md dist/lib-formly-designer/README.md && node tools/copy.js LICENSE dist/lib-formly-designer/LICENSE",
+    "build_lib": "ng build lib-formly-designer --configuration production",
+    "npm_pack": "npm run copy && cd dist/lib-formly-designer && npm pack",
     "package": "npm run build_lib && npm run npm_pack"
   },
   "private": true,

@@ -7,14 +7,14 @@ import { FormlyModule } from '@ngx-formly/core';
 import { FormlyBootstrapModule } from '@ngx-formly/bootstrap';
 import { FormlyTabsModule } from 'ngx-formly-tabs';
 
-import { FormlyDesignerModule } from 'ngx-formly-designer';
+import { FormlyDesignerModule } from 'lib-formly-designer';
 
 import { config, fieldComponents } from './config';
 import { designerConfig } from './designer-config';
 
 import { AppComponent } from './app.component';
 import { ExpanderComponent } from './components/expander.component';
-import { FieldsService, FormlyDesignerService } from 'ngx-formly-designer';
+import { FieldsService, FormlyDesignerService } from 'lib-formly-designer';
 
 @NgModule({
   declarations: [

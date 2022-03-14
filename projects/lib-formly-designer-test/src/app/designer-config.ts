@@ -1,4 +1,4 @@
-import { DesignerConfigOption } from 'ngx-formly-designer';
+import { DesignerConfigOption } from 'lib-formly-designer';
 
 const reserved = new Set(['label', 'fieldset', 'description', 'validation-message', 'form-field']);
 

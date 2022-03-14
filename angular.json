@@ -3,24 +3,24 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "ngx-formly-designer": {
+    "lib-formly-designer": {
       "projectType": "library",
-      "root": "projects/ngx-formly-designer",
-      "sourceRoot": "projects/ngx-formly-designer/src",
+      "root": "projects/lib-formly-designer",
+      "sourceRoot": "projects/lib-formly-designer/src",
       "prefix": "lib",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
-            "project": "projects/ngx-formly-designer/ng-package.json"
+            "project": "projects/lib-formly-designer/ng-package.json"
           },
           "configurations": {
             "production": {
-              "project": "projects/ngx-formly-designer/ng-package.prod.json",
-              "tsConfig": "projects/ngx-formly-designer/tsconfig.lib.prod.json"
+              "project": "projects/lib-formly-designer/ng-package.prod.json",
+              "tsConfig": "projects/lib-formly-designer/tsconfig.lib.prod.json"
             },
             "development": {
-              "tsConfig": "projects/ngx-formly-designer/tsconfig.lib.json"
+              "tsConfig": "projects/lib-formly-designer/tsconfig.lib.json"
             }
           },
           "defaultConfiguration": "production"
@@ -28,14 +28,14 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "projects/ngx-formly-designer/src/test.ts",
-            "tsConfig": "projects/ngx-formly-designer/tsconfig.spec.json",
-            "karmaConfig": "projects/ngx-formly-designer/karma.conf.js"
+            "main": "projects/lib-formly-designer/src/test.ts",
+            "tsConfig": "projects/lib-formly-designer/tsconfig.spec.json",
+            "karmaConfig": "projects/lib-formly-designer/karma.conf.js"
           }
         }
       }
     },
-    "ngx-formly-designer-test": {
+    "lib-formly-designer-test": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -45,27 +45,27 @@
           "strict": true
         }
       },
-      "root": "projects/ngx-formly-designer-test",
-      "sourceRoot": "projects/ngx-formly-designer-test/src",
+      "root": "projects/lib-formly-designer-test",
+      "sourceRoot": "projects/lib-formly-designer-test/src",
       "prefix": "app",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/ngx-formly-designer-test",
-            "index": "projects/ngx-formly-designer-test/src/index.html",
-            "main": "projects/ngx-formly-designer-test/src/main.ts",
-            "polyfills": "projects/ngx-formly-designer-test/src/polyfills.ts",
-            "tsConfig": "projects/ngx-formly-designer-test/tsconfig.app.json",
+            "outputPath": "dist/lib-formly-designer-test",
+            "index": "projects/lib-formly-designer-test/src/index.html",
+            "main": "projects/lib-formly-designer-test/src/main.ts",
+            "polyfills": "projects/lib-formly-designer-test/src/polyfills.ts",
+            "tsConfig": "projects/lib-formly-designer-test/tsconfig.app.json",
             "inlineStyleLanguage": "scss",
             "assets": [
-              "projects/ngx-formly-designer-test/src/favicon.ico",
-              "projects/ngx-formly-designer-test/src/assets"
+              "projects/lib-formly-designer-test/src/favicon.ico",
+              "projects/lib-formly-designer-test/src/assets"
             ],
             "styles": [
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "node_modules/font-awesome/css/font-awesome.min.css",
-              "projects/ngx-formly-designer-test/src/styles.scss"
+              "projects/lib-formly-designer-test/src/styles.scss"
             ],
             "scripts": [
               "node_modules/jquery/dist/jquery.slim.min.js",
@@ -88,8 +88,8 @@
               ],
               "fileReplacements": [
                 {
-                  "replace": "projects/ngx-formly-designer-test/src/environments/environment.ts",
-                  "with": "projects/ngx-formly-designer-test/src/environments/environment.prod.ts"
+                  "replace": "projects/lib-formly-designer-test/src/environments/environment.ts",
+                  "with": "projects/lib-formly-designer-test/src/environments/environment.prod.ts"
                 }
               ],
               "outputHashing": "all"
@@ -109,10 +109,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "ngx-formly-designer-test:build:production"
+              "browserTarget": "lib-formly-designer-test:build:production"
             },
             "development": {
-              "browserTarget": "ngx-formly-designer-test:build:development"
+              "browserTarget": "lib-formly-designer-test:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -120,23 +120,23 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "ngx-formly-designer-test:build"
+            "browserTarget": "lib-formly-designer-test:build"
           }
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "projects/ngx-formly-designer-test/src/test.ts",
-            "polyfills": "projects/ngx-formly-designer-test/src/polyfills.ts",
-            "tsConfig": "projects/ngx-formly-designer-test/tsconfig.spec.json",
-            "karmaConfig": "projects/ngx-formly-designer-test/karma.conf.js",
+            "main": "projects/lib-formly-designer-test/src/test.ts",
+            "polyfills": "projects/lib-formly-designer-test/src/polyfills.ts",
+            "tsConfig": "projects/lib-formly-designer-test/tsconfig.spec.json",
+            "karmaConfig": "projects/lib-formly-designer-test/karma.conf.js",
             "inlineStyleLanguage": "scss",
             "assets": [
-              "projects/ngx-formly-designer-test/src/favicon.ico",
-              "projects/ngx-formly-designer-test/src/assets"
+              "projects/lib-formly-designer-test/src/favicon.ico",
+              "projects/lib-formly-designer-test/src/assets"
             ],
             "styles": [
-              "projects/ngx-formly-designer-test/src/styles.scss"
+              "projects/lib-formly-designer-test/src/styles.scss"
             ],
             "scripts": []
           }
@@ -144,5 +144,5 @@
       }
     }
   },
-  "defaultProject": "ngx-formly-designer"
+  "defaultProject": "lib-formly-designer"
 }

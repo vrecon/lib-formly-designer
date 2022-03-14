@@ -1,5 +1,5 @@
 /*
- * Public API Surface of ngx-formly-designer
+ * Public API Surface of lib-formly-designer
  */
 
 export * from './lib/config';
