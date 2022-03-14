@@ -1,0 +1,15 @@
+/*
+ * Public API Surface of ngx-formly-designer
+ */
+export * from './lib/config';
+export * from './lib/fields.service';
+export * from './lib/formly-designer-config';
+export * from './lib/formly-designer.service';
+export * from './lib/formly-designer.component';
+export * from './lib/formly-designer.module';
+export * from './lib/json-helper';
+export * from './lib/components/wrapper-editor';
+export * from './lib/components/properties';
+export * from './lib/components/field-editor';
+export * from './lib/components/types';
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicHVibGljX2FwaS5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIi4uLy4uLy4uL3Byb2plY3RzL25neC1mb3JtbHktZGVzaWduZXIvc3JjL3B1YmxpY19hcGkudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7O0dBRUc7QUFFSCxjQUFjLGNBQWMsQ0FBQztBQUM3QixjQUFjLHNCQUFzQixDQUFDO0FBQ3JDLGNBQWMsOEJBQThCLENBQUM7QUFDN0MsY0FBYywrQkFBK0IsQ0FBQztBQUM5QyxjQUFjLGlDQUFpQyxDQUFDO0FBQ2hELGNBQWMsOEJBQThCLENBQUM7QUFDN0MsY0FBYyxtQkFBbUIsQ0FBQztBQUVsQyxjQUFjLGlDQUFpQyxDQUFDO0FBQ2hELGNBQWMsNkJBQTZCLENBQUM7QUFDNUMsY0FBYywrQkFBK0IsQ0FBQztBQUM5QyxjQUFjLHdCQUF3QixDQUFDIiwic291cmNlc0NvbnRlbnQiOlsiLypcbiAqIFB1YmxpYyBBUEkgU3VyZmFjZSBvZiBuZ3gtZm9ybWx5LWRlc2lnbmVyXG4gKi9cblxuZXhwb3J0ICogZnJvbSAnLi9saWIvY29uZmlnJztcbmV4cG9ydCAqIGZyb20gJy4vbGliL2ZpZWxkcy5zZXJ2aWNlJztcbmV4cG9ydCAqIGZyb20gJy4vbGliL2Zvcm1seS1kZXNpZ25lci1jb25maWcnO1xuZXhwb3J0ICogZnJvbSAnLi9saWIvZm9ybWx5LWRlc2lnbmVyLnNlcnZpY2UnO1xuZXhwb3J0ICogZnJvbSAnLi9saWIvZm9ybWx5LWRlc2lnbmVyLmNvbXBvbmVudCc7XG5leHBvcnQgKiBmcm9tICcuL2xpYi9mb3JtbHktZGVzaWduZXIubW9kdWxlJztcbmV4cG9ydCAqIGZyb20gJy4vbGliL2pzb24taGVscGVyJztcblxuZXhwb3J0ICogZnJvbSAnLi9saWIvY29tcG9uZW50cy93cmFwcGVyLWVkaXRvcic7XG5leHBvcnQgKiBmcm9tICcuL2xpYi9jb21wb25lbnRzL3Byb3BlcnRpZXMnO1xuZXhwb3J0ICogZnJvbSAnLi9saWIvY29tcG9uZW50cy9maWVsZC1lZGl0b3InO1xuZXhwb3J0ICogZnJvbSAnLi9saWIvY29tcG9uZW50cy90eXBlcyc7XG4iXX0=
